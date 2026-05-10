@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book.Net - Acervo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-light">
+
+    <!-- Incluir Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-book"></i> Book.Net</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2>Acervo de Livros</h2>
+            <a href="cadastro-livro.html" class="btn btn-success"><i class="bi bi-plus-lg"></i> Novo Livro</a>
+        </div>
+
+        <!-- Filtro de Busca -->
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" placeholder="Buscar por Título, Autor ou ISBN...">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary w-100"><i class="bi bi-search"></i> Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabela -->
+        <div class="table-responsive bg-white shadow-sm rounded">
+            <table class="table table-hover table-striped align-middle mb-0">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ISBN</th>
+                        <th>Título</th>
+                        <th>Autor</th>
+                        <th>Assunto</th>
+                        <th>Qtd.</th>
+                        <th class="text-center">Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>978-85-7522-817-4</td>
+                        <td>Dominando JavaScript</td>
+                        <td>John Doe</td>
+                        <td>Desenvolvimento Web</td>
+                        <td>12</td>
+                        <td class="text-center">
+                            <button class="btn btn-sm btn-warning" title="Editar"><i class="bi bi-pencil"></i></button>
+                            <button class="btn btn-sm btn-danger" title="Remover"><i class="bi bi-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>978-85-1234-567-8</td>
+                        <td>Arquitetura de Banco de Dados Relacional</td>
+                        <td>Jane Smith</td>
+                        <td>Banco de Dados</td>
+                        <td>5</td>
+                        <td class="text-center">
+                            <button class="btn btn-sm btn-warning" title="Editar"><i class="bi bi-pencil"></i></button>
+                            <button class="btn btn-sm btn-danger" title="Remover"><i class="bi bi-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</body>
+</html>

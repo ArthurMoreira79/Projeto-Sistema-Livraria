@@ -1,0 +1,34 @@
+/* Customizações globais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Efeitos de Hover para os botões do Dashboard */
+.action-card {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+}
+
+.action-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    background-color: #f8f9fa;
+}
+
+/* Ajustes de tipografia nos cards superiores */
+.card-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.card-footer {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-top: none;
+    cursor: pointer;
+}
+
+.card-footer:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
